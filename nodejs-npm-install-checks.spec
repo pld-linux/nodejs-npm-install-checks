@@ -1,18 +1,18 @@
 %define		pkg	npm-install-checks
 Summary:	Checks that npm runs during the installation of a module
 Name:		nodejs-%{pkg}
-Version:	1.0.0
+Version:	1.0.2
 Release:	1
 License:	BSD-2-Clause
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	1f898c0fe4ccb8c2620ebce4d9db57ce
+# Source0-md5:	36a19c09f90eabb1de4f28162d3666ee
 URL:		https://github.com/robertkowalski/npm-install-checks
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
-Requires:	nodejs-npmlog = 0.0.6
-Requires:	nodejs-semver < 2.3.0
-Requires:	nodejs-semver >= 2.2.1
+Requires:	nodejs-npmlog = 0.1
+Requires:	nodejs-semver < 3.0.0
+Requires:	nodejs-semver >= 2.3.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
